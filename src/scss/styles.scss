@@ -1,4 +1,8 @@
 @import "./mixins";
-@import "./tipografia";
 @import "./variables";
+@import "./tipografia";
+
+// Paginas
+@import "./base";
 @import "./navegacion";
+@import "./home";
