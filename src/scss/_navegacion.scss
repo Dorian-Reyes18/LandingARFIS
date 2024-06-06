@@ -33,6 +33,7 @@
           margin-right: 7px;
           padding: 5px 8px;
           &:hover {
+            cursor: pointer;
             border-bottom: 4px solid $color-amarillo;
             a {
               color: $color-blanco !important;
