@@ -1,4 +1,19 @@
 .banner-base {
+  .desk {
+    @include media(mobile) {
+      display: none !important;
+    }
+  }
+
+  .mbl {
+    display: none;
+
+    @include media(mobile) {
+      display: flex;
+      width: 100%;
+      height: auto;
+    }
+  }
   img {
     display: flex;
     width: 100%;
@@ -42,7 +57,17 @@
     -ms-border-radius: 14px;
     -o-border-radius: 14px;
 
+    @include media(mobile) {
+      padding: 60px 0 20px;
+      margin: 30px 20px 0 20px;
+      gap: 0;
+      flex-direction: column;
+    }
+
     .text {
+      .mb-5 {
+        line-height: 60px;
+      }
       h2 {
         color: $azul-head !important;
         margin-bottom: 25px;
@@ -50,11 +75,20 @@
       p {
         font-size: 16px;
         line-height: 25px;
+
+        @include media(mobile) {
+          text-align: center;
+        }
       }
     }
     .img {
       img {
         height: 350px;
+
+        @include media(mobile) {
+          width: 100%;
+          height: auto;
+        }
       }
     }
   }
@@ -66,6 +100,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+
+    @include media(mobile) {
+      padding: 100px 20px;
+      gap: 50px;
+    }
 
     .cards {
       justify-content: center;
@@ -75,6 +115,14 @@
       padding: 90px 20px 20px;
       display: flex;
       gap: 30px;
+
+      @include media(mobile) {
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+        gap: 60px;
+      }
+
       .e-card {
         border-top: 8px solid $rosado-cards;
         text-align: center;
@@ -115,6 +163,11 @@
     background: $fondo-gris;
     justify-content: center;
 
+    @include media(mobile) {
+      text-align: center;
+      gap: 15px;
+    }
+
     section {
       display: flex;
       flex-direction: column;
@@ -132,6 +185,10 @@
         align-items: flex-end;
         gap: 90px;
 
+        @include media(mobile) {
+          gap: 90px;
+        }
+
         .person {
           width: calc(22% - 8px);
           height: auto;
@@ -143,6 +200,9 @@
             width: calc(15% - 8px);
           }
 
+          @include media(mobile) {
+            width: calc(80% - 8px);
+          }
           img {
             margin-bottom: 20px;
             width: 100%;

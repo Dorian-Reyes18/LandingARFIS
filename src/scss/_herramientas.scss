@@ -4,6 +4,18 @@
       width: 100%;
       height: auto;
     }
+    .dsk {
+      @include media(mobile) {
+        display: none;
+      }
+    }
+
+    .mbl {
+      display: none;
+      @include media(mobile) {
+        display: block;
+      }
+    }
   }
 
   .block-1 {
@@ -12,6 +24,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+
+    @include media(mobile) {
+      padding: 60px 20px;
+    }
 
     .general-content {
       width: 100%;
@@ -20,11 +37,21 @@
       align-items: center;
       gap: 86px;
 
+      @include media(mobile) {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+      }
+
       .content {
         width: 50%;
         display: flex;
         flex-direction: column;
         gap: 10px;
+
+        @include media(mobile) {
+          width: 100%;
+        }
         span {
           font-size: 30px;
         }
@@ -42,6 +69,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+
+    @include media(mobile) {
+      padding: 60px 20px;
+    }
 
     .general-content {
       width: 100%;
@@ -51,6 +83,10 @@
       gap: 40px;
       flex-direction: column;
 
+      @include media(mobile) {
+        width: 100%;
+      }
+
       .title {
         width: 100%;
         display: flex;
@@ -58,6 +94,10 @@
         padding-bottom: 30px;
         border-bottom: 1px solid $color-gris;
         margin-bottom: 70px;
+
+        @include media(mobile) {
+          margin-bottom: 20px;
+        }
 
         span {
           font-size: 30px;
@@ -68,12 +108,27 @@
         flex-direction: row;
         justify-content: center;
         gap: 80px;
+
+        @include media(mobile) {
+          flex-direction: column;
+        }
         img {
           width: 45%;
+
+          @include media(mobile) {
+            width: 100%;
+          }
         }
         .info {
           align-items: flex-start;
           width: 45%;
+
+          @include media(mobile) {
+            width: 100%;
+            h4 {
+              width: 100%;
+            }
+          }
         }
       }
 
@@ -82,12 +137,28 @@
         flex-direction: row;
         justify-content: center;
         gap: 80px;
+
+        @include media(mobile) {
+          flex-direction: column-reverse;
+          gap: 60px;
+        }
         img {
           width: 45%;
+
+          @include media(mobile) {
+            width: 100%;
+          }
         }
         .info {
           align-items: flex-start;
           width: 45%;
+
+          @include media(mobile) {
+            width: 100%;
+            h4 {
+              width: 100%;
+            }
+          }
         }
       }
     }
@@ -98,6 +169,10 @@
     justify-content: center;
     align-items: center;
 
+    @include media(mobile) {
+      padding: 60px 20px;
+    }
+
     .general-content {
       width: 100%;
       max-width: 1400px;
@@ -105,6 +180,10 @@
       align-items: center;
       gap: 40px;
       flex-direction: column;
+
+      @include media(mobile) {
+        width: 100%;
+      }
 
       .title {
         width: 100%;
@@ -118,6 +197,10 @@
         p {
           width: 800px;
           text-align: center;
+
+          @include media(mobile) {
+            width: 100%;
+          }
         }
         span {
           font-size: 30px;
@@ -127,8 +210,21 @@
   }
   .collage {
     display: flex;
+    flex-direction: column;
     img {
       width: 100%;
+    }
+
+    .dsk {
+      @include media(mobile) {
+        display: none;
+      }
+    }
+    .mbl {
+      display: none;
+      @include media(mobile) {
+        display: block;
+      }
     }
   }
 }
@@ -142,6 +238,10 @@
   align-items: center;
   flex-direction: column;
 
+  @include media(mobile) {
+    padding: 60px 30px 10px;
+  }
+
   .language-cpp {
     border-radius: 15px;
     margin: 40px 0 100px !important;
@@ -151,6 +251,11 @@
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
+
+    @include media(mobile) {
+      width: 100%;
+      margin-bottom: 30px !important;
+    }
   }
   h1 {
     text-align: center;
