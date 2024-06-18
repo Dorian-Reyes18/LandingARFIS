@@ -21,7 +21,11 @@
       color: $letra-gris !important;
     }
   }
-
+  .strong {
+    strong {
+      color: $color-blanco !important;
+    }
+  }
   .block-1 {
     margin: 50px 0;
     height: 100%;
@@ -29,7 +33,7 @@
     display: flex;
     align-items: center;
     gap: 100px;
-    padding:60px 20px;
+    padding: 60px 20px;
     width: 100%;
     max-width: 1150px;
     border-radius: 14px;
@@ -46,8 +50,6 @@
       p {
         font-size: 16px;
         line-height: 25px;
-        &::before {
-        }
       }
     }
     .img {
@@ -64,14 +66,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: $fondo-gris;
 
     .cards {
       justify-content: center;
       width: 100%;
       max-width: 1500px;
       width: 100%;
-      padding: 90px 30px 20px 30px;
+      padding: 90px 20px 20px;
       display: flex;
       gap: 30px;
       .e-card {
@@ -101,6 +102,51 @@
         h4 {
           margin-bottom: 20px;
           color: $rosado-cards;
+        }
+      }
+    }
+  }
+  .block-3 {
+    width: 100%;
+    width: 100%;
+    padding: 90px 20px 100px;
+    display: flex;
+    gap: 30px;
+    background: $fondo-gris;
+    justify-content: center;
+
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 1500px;
+
+      .integrants {
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 90px;
+
+        .person {
+          width: calc(22% - 8px);
+          height: auto;
+          flex-direction: column;
+          display: flex;
+          align-items: center;
+
+          @include media(desktopXXL) {
+            width: calc(15% - 8px);
+          }
+
+          img {
+            margin-bottom: 20px;
+            width: 100%;
+          }
         }
       }
     }

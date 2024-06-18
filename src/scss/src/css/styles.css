@@ -1,0 +1,154 @@
+@charset "UTF-8";
+/* BREAKPOINTS PARA LAS MEDIA QUERYS */
+/* FONT FAMILY´S */
+@font-face {
+  font-family: "Inter-Regular";
+  src: url(../font/Inter-Regular.ttf); }
+@font-face {
+  font-family: "Inter-Bold";
+  src: url(../font/Inter-Bold.ttf); }
+@font-face {
+  font-family: "Jost-Bold";
+  src: url(../font/Jost-ExtraBold.ttf); }
+body {
+  font-family: "Inter-Regular";
+  color: #0f202f !important; }
+  body h1,
+  body h2,
+  body h3,
+  body h4,
+  body h5,
+  body h6 {
+    font-family: "Jost-Bold"; }
+  body strong {
+    font-family: "Inter-Bold"; }
+  body p {
+    color: #444444 !important; }
+
+.container-base {
+  background: linear-gradient(to right, #324a5e, #0f202f);
+  justify-content: center;
+  display: flex;
+  padding: 10px 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1; }
+  .container-base .navbar {
+    width: 100%;
+    max-width: 1400px;
+    background-color: transparent !important; }
+    .container-base .navbar a {
+      color: #fff; }
+    .container-base .navbar .navbar-brand {
+      margin: 0 60px 0 20px; }
+      .container-base .navbar .navbar-brand .logonav {
+        width: 200px;
+        height: auto; }
+    .container-base .navbar .collapse .navbar-nav .nav-item {
+      margin-right: 7px;
+      padding: 5px 8px; }
+      .container-base .navbar .collapse .navbar-nav .nav-item:hover {
+        cursor: pointer;
+        border-bottom: 4px solid #cea026; }
+        .container-base .navbar .collapse .navbar-nav .nav-item:hover a {
+          color: #fff !important; }
+      .container-base .navbar .collapse .navbar-nav .nav-item .nav-link {
+        color: #bbbbbb; }
+  .container-base .activo {
+    font-size: 20px;
+    border-bottom: 4px solid #cea026;
+    font-family: "Inter-Bold"; }
+    .container-base .activo a {
+      color: #fff !important; }
+
+.banner-base img {
+  display: flex;
+  width: 100%;
+  height: auto; }
+
+.info {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+  .info .b-2 {
+    display: flex;
+    width: 100%;
+    background: #324a5e;
+    justify-content: center; }
+    .info .b-2 p {
+      color: #e1e1e1 !important; }
+  .info .block-1 {
+    margin: 50px 0;
+    height: 100%;
+    flex-direction: row-reverse;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    padding: 60px 20px;
+    width: 100%;
+    max-width: 1150px;
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px; }
+    .info .block-1 .text h2 {
+      color: #13369f !important;
+      margin-bottom: 25px; }
+    .info .block-1 .text p {
+      font-size: 16px;
+      line-height: 25px; }
+    .info .block-1 .img img {
+      height: 350px; }
+  .info .block-2 {
+    width: 100%;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f8f9fa; }
+    .info .block-2 .cards {
+      justify-content: center;
+      width: 100%;
+      max-width: 1500px;
+      width: 100%;
+      padding: 90px 30px 20px 30px;
+      display: flex;
+      gap: 30px; }
+      .info .block-2 .cards .e-card {
+        border-top: 8px solid #e14e6f;
+        text-align: center;
+        display: grid;
+        justify-items: center;
+        max-width: 300px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        width: fit-content;
+        padding: 20px;
+        border-radius: 12px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        -ms-border-radius: 12px;
+        -o-border-radius: 12px;
+        background: #fff; }
+        @media (min-width: 1200px) and (max-width: 1366px) {
+          .info .block-2 .cards .e-card {
+            max-width: 250px; } }
+        .info .block-2 .cards .e-card img {
+          margin-bottom: 20px;
+          width: 80px; }
+        .info .block-2 .cards .e-card h4 {
+          margin-bottom: 20px;
+          color: #e14e6f; }
+    .info .block-2 .block-3 {
+      justify-content: center;
+      width: 100%;
+      max-width: 1500px;
+      width: 100%;
+      padding: 90px 30px 20px 30px;
+      display: flex;
+      gap: 30px; }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,6 +1,6 @@
 body {
   font-family: $font-family-inter-Regular;
-  color: $azul-oscuro-navegacion !important;
+  color: $color-gris !important;
 
   h1,
   h2,
@@ -9,9 +9,11 @@ body {
   h5,
   h6 {
     font-family: $font-family-jost-Bold;
+    color: $color-gris;
   }
 
   strong {
+    color: $color-gris;
     font-family: $font-family-inter-Bold;
   }
 

@@ -4,7 +4,7 @@ $breakpoint-inicio-tablet: 768px;
 $breakpoint-fin-tablet: 991px;
 $breakpoint-desktop: 992px;
 $breakpoint-desktopXL: 1200px;
-$breakpoint-desktopXXL: 1400px;
+$breakpoint-desktopXXL-inicio: 1400px;
 
 /* FONT FAMILY´S */
 $font-family-inter-Regular: "Inter-Regular";
@@ -14,15 +14,15 @@ $font-family-jost-Bold: "Jost-Bold";
 // letras
 $color-blanco: #fff;
 $color-amarillo: #cea026;
+$color-amarillo-accesibilidad: #ffdf89;
 $color-inactivo: #bbbbbb;
-$color-gris: #444444;
+$color-gris: #4b4b4b;
 $letra-gris: #e1e1e1;
 $azul-letra: #375a7b;
 $azul-head: #13369f;
 
 // fondos
-$fondo-gris: #f8f9fa;
+$fondo-gris: #ededed;
 $azul-navegacion: #324a5e;
 $azul-oscuro-navegacion: #0f202f;
 $rosado-cards: #e14e6f;
-
