@@ -133,7 +133,7 @@
   }
 }
 .code-container {
-  background-color: #121726;
+  background-color: $azul-fondo-banner;
   margin: 0 !important;
 
   padding: 100px 60px 10px;
@@ -154,16 +154,11 @@
   }
   h1 {
     text-align: center;
-    color: #f7ea87;
+    color: $color-amarillo-accesibilidad;
   }
 }
 pre {
   margin: 0;
   white-space: pre-wrap;
   overflow-x: auto; /* Agrega barras de desplazamiento horizontal si es necesario */
-}
-
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
-  background: #212121;
 }
