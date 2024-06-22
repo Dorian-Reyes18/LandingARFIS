@@ -7,6 +7,10 @@
   align-items: center;
   text-align: center;
 
+  @include media(mobile) {
+    padding: 40px 20px 60px;
+  }
+
   h1,
   h2,
   h3,

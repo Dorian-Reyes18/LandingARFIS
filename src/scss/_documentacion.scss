@@ -1,0 +1,114 @@
+.doc-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .block-1 {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    padding: 100px 20px 20px 20px;
+
+    @include media(mobile) {
+      padding: 60px 20px 20px 20px;
+    }
+
+    .ltable {
+      @include media(mobile) {
+        overflow: scroll;
+        max-width: 400px;
+      }
+
+      .table {
+        border: 1px solid $color-inactivo;
+
+        @include media(mobile) {
+          margin-right: 20px !important;
+          left: 40px !important;
+          position: relative !important;
+        }
+        thead {
+          tr {
+            th {
+              border-right: 1px solid $color-inactivo;
+              text-align: left !important;
+            }
+          }
+        }
+        tbody {
+          tr {
+            border-bottom: 1px solid $color-inactivo;
+            td {
+              border: none;
+              border-left: 1px solid $color-inactivo;
+              text-align: left !important;
+            }
+          }
+          th {
+          }
+        }
+      }
+      .table > :not(caption) > * > * {
+        padding: 0.2rem 0.5rem;
+      }
+      .t-interna {
+        display: flex;
+        justify-items: center;
+        justify-content: center;
+        .tabla-interna {
+          tr {
+            border: 1px solid $color-inactivo;
+            td {
+              padding: 2px 50px;
+            }
+          }
+        }
+      }
+
+      .center-en {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+
+  .block-2 {
+    width: 100%;
+    background: none;
+    padding: 60px 20px;
+
+    .content {
+      width: 100%;
+      max-width: 1100px;
+      justify-items: left;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      ol {
+        max-width: 800px;
+        width: 100%;
+        text-align: left;
+        li {
+          flex-direction: column;
+          align-items: center;
+
+          p {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+
+            img {
+              width: 100%;
+              max-width: 600px;
+            }
+          }
+          img {
+            width: 100%;
+            max-width: 600px;
+          }
+        }
+      }
+    }
+  }
+}
